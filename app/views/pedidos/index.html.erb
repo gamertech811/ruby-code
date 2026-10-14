@@ -1,0 +1,9 @@
+<%= link_to "novo pedido", new_pedido_path%>
+<div class="pedidos">
+<% @pedidos.each do |p| %>
+  <p>Mesa: <%=p.mesa %></p>
+  <p>Horario: <%=p.hora %></p>
+  <p>Fechado? <%= p.fechado == 1 ? "Sim" : "Não" %></p>
+  <p><%= link_to "Mostrar pedido", p%></p>
+<%end %>
+</div>

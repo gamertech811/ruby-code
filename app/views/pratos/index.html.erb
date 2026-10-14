@@ -1,0 +1,9 @@
+<%= link_to "novo prato", new_prato_path%>
+<div class="pratos">
+<% @pratos.each do |p| %>
+  <p>Nome: <%=p.nome %></p>
+  <p>Descricao: <%=p.descricao %></p>
+  <p>Preco: <%=p.preco %></p>
+  <p><%= link_to "Mostrar prato", p%></p>
+<%end %>
+</div>

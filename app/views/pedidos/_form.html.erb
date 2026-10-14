@@ -1,0 +1,17 @@
+<div class="formulario">
+  <%= form_with(model: @pedido) do |form| %>
+
+    <div>
+      <%= form.label :mesa %>
+      <%= form.text_field :mesa %>
+    </div>
+
+    <div>
+      <%= form.label :id_prato, "Prato" %>
+      <%= form.collection_select :id_prato, Prato.all, :id, :nome, prompt: "Escolha um prato" %>
+    </div>
+
+    <%= form.submit "Salvar" %>
+
+  <% end %>
+</div>

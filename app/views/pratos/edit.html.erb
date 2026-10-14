@@ -1,0 +1,9 @@
+<% content_for :title, "Editar Prato"%>
+
+<h1>Editar Prato</h1>
+
+<%=render "form", prato: @prato%>
+
+<div>
+  <%= link_to "cancelar", pratos_path %>
+</div>

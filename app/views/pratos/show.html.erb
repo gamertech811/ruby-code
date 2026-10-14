@@ -1,0 +1,8 @@
+<div class="prato">
+  <h1><%=@prato.nome %></h1>
+  <h1><%=@prato.descricao%></h1>
+  <h1><%=@prato.preco %></h1>
+  <%= button_to "Excluir", @prato, method: :delete %>
+  <%= link_to "Editar", edit_prato_path(@prato) %>
+  <%= link_to "Voltar", pratos_path%>
+</div>

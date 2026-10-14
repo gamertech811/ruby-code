@@ -1,0 +1,9 @@
+<% content_for :title, "Novo Prato" %>
+
+<h1>Novo Prato</h1>
+
+<%= render "form", prato: @prato %>
+
+<div>
+  <%= link_to "voltar", pratos_path %>
+</div>

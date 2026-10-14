@@ -1,0 +1,7 @@
+<div class="pedido">
+  <h1><%=@pedido.mesa %></h1>
+  <h1><%=@pedido.id_prato%></h1>
+  <h1><%=@pedido.hora %></h1>
+  <%= button_to "Excluir", @pedido, method: :delete %>
+  <%= link_to "Voltar", pedidos_path%>
+</div>
